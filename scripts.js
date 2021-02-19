@@ -27,7 +27,5 @@ button.addEventListener("click", function() {
     spantext.style.color = input3.value;
     div.append(spantext);
     div.append(spanmass);
-    document.body.append(div)
-
-    
+    document.body.append(div)   
 })
