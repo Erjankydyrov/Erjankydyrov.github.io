@@ -4,6 +4,16 @@ let input2 = document.querySelector("#massage");
 let input3 = document.querySelector("#color");
 
 button.addEventListener("click", function() {
+
+    fetch("https://live-chat-7d71f-default-rtdb.firebaseio.com/chat.json" , {
+        method: "POST",
+        body: JSON.stringify({
+            name: input1.value,
+            massage: input2.value,
+            color: input3.value,
+        }),
+    })
+
     console.log(input1.value);
     console.log(input2.value);
     console.log(input3.value);
@@ -18,4 +28,6 @@ button.addEventListener("click", function() {
     div.append(spantext);
     div.append(spanmass);
     document.body.append(div)
+
+    
 })
