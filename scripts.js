@@ -7,4 +7,10 @@ button.addEventListener("click", function() {
     console.log(input1.value);
     console.log(input2.value);
     console.log(input3.value);
+
+    let div = document.createElement("div");
+    let spantext = document.createElement("span");
+    let spanmass = document.createElement("span");
+
+   
 })
