@@ -12,5 +12,10 @@ button.addEventListener("click", function() {
     let spantext = document.createElement("span");
     let spanmass = document.createElement("span");
 
-   
+    spantext.innerText = input1.value + ':';
+    spanmass.innerText = input2.value;
+    spantext.style.color = input3.value;
+    div.append(spantext);
+    div.append(spanmass);
+    document.body.append(div)
 })
